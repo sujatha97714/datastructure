@@ -86,7 +86,7 @@ public class LinkedList {
 
 
 // head
-// [user1, next] -> [user2, next]-> -> [user2, next]-> [user2, next] -> [user2, next]-> [user2, next]-> null
+// [user1, next] -> [user2, next]-> -> [user3, next]-> [user4, next] -> [user5, next]-> [user6, next]-> null
 
 // => head = null;
 
