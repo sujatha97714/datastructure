@@ -58,6 +58,19 @@ public class LinkedList {
         return length;
     }
 
+    int getPosition(int data) {
+        Node current = this.head;
+        int pos = 0;
+        while(current != null) {
+            pos++;
+            if(current.data == data) {
+                return pos;
+            }
+            current = current.next == this.head ? null : current.next;
+        }
+        return -1;
+    }
+
     boolean isCircular() {
         Node rab = this.head;
         Node tor = this.head;
@@ -81,6 +94,8 @@ public class LinkedList {
         ll.tail.next = ll.head;
         ll.printElement();
         System.out.println("Is Circular? " + ll.isCircular());
+        int num = 5;
+        System.out.println("The number " + num + " is at position " + ll.getPosition(num));
     }
 }
 
